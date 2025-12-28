@@ -1,0 +1,64 @@
+@use "./variables" as v;
+.assignment-list {
+  padding: 16px;
+  animation: fadeIn 0.4s ease-out;
+
+  h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    background-color: #71bd74;
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  .assignment-card {
+    background: rgba(237, 209, 209, 0.714);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .assignment-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .difficulty {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    text-transform: capitalize;
+
+    &.easy {
+      color: #2e7d32;
+      background:v.$diff;
+    }
+
+    &.medium {
+      color: #b68904;
+      background:v.$diff;
+    }
+
+    &.hard {
+      color: #c62828;
+      background:v.$diff;
+    }
+  }
+
+  h3 {
+    color: #000;
+  }
+
+  p {
+    color: #000;
+  }
+}

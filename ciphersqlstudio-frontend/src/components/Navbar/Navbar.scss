@@ -1,0 +1,39 @@
+@use "../../styles/variables" as v;
+
+.navbar {
+  height: 64px;
+  padding: 0 1.5rem;
+  background: rgba(44, 1, 24, 0.877);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid v.$border;
+
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(7, 240, 205, 0.907);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .user {
+    color: rgb(249, 246, 240);
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 6px 14px;
+    background: v.$primary;
+    color: white;
+    font-size: 0.85rem;
+    &:hover {
+      background:red;
+    }
+  }
+}

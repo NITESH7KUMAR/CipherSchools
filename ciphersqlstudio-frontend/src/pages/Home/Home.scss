@@ -1,0 +1,38 @@
+@use "../../styles/variables" as v;
+
+.hero  {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+
+  h1 {
+    font-size: 5rem;
+    margin-top: -9rem;
+
+    span {
+      color: rgb(187, 93, 4);
+    }
+  }
+
+  p {
+    color:rgb(55, 7, 11);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  button {
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background: rgb(6, 115, 24);
+    color: white;
+    font-size: 1rem;
+
+    &:hover {
+      background: v.$primary-dark;
+    }
+  }
+}

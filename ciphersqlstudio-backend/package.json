@@ -1,0 +1,34 @@
+{
+  "name": "ciphersqlstudio-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NITESH7KUMAR/ciphersqlstudio-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NITESH7KUMAR/ciphersqlstudio-backend/issues"
+  },
+  "homepage": "https://github.com/NITESH7KUMAR/ciphersqlstudio-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "groq": "^5.1.0",
+    "groq-sdk": "^0.37.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.2",
+    "node-cron": "^4.2.1",
+    "openai": "^6.15.0",
+    "pg": "^8.16.3",
+    "uuid": "^13.0.0"
+  }
+}

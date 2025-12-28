@@ -1,0 +1,84 @@
+.attempt-page {
+  padding: 16px;
+}
+
+.question-panel {
+  margin-bottom: 16px;
+  color: rgb(4, 3, 3);
+  background-color: #dcd7d7;
+  padding: 10px;
+}
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sample-data,
+.sql-editor,
+.results {
+  background: rgb(244, 239, 239);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  color: #000;
+  ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  h3{
+    color: #c0014a;
+  }
+}
+
+.sql-editor textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  font-family: monospace;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #01a80c;
+    &:hover{
+      background-color: #c0014a;
+    }
+    
+  }
+
+  .hint-btn {
+    background-color: #3a6bab;
+    &:hover{
+      background-color: #1ee397;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .workspace {
+    flex-direction: row;
+  }
+
+  .sample-data {
+    flex: 1;
+  }
+
+  .sql-editor {
+    flex: 2;
+  }
+
+  .results {
+    flex: 1;
+  }
+}

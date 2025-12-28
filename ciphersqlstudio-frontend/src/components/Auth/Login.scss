@@ -1,0 +1,73 @@
+@use "../../styles/variables" as v;
+
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(61, 21, 21, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: linear-gradient(
+  to bottom,
+  #03596a 20%,
+  #016568 30%,
+  #013a69 60%,
+  #2c0152 90%
+);
+  padding: 2rem;
+  width: 320px;
+  border-radius: v.$radius;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  animation: scaleIn 0.25s ease-out;
+
+  h2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  input {
+    padding: 10px;
+    border-radius: v.$radius;
+    border: 1px solid v.$border;
+    background: wheat;
+    color:black;
+  }
+
+  button {
+    background: rgb(136, 0, 120);
+    color: white;
+    padding: 10px;
+    width: 150px;
+    margin-left: 65px;
+  }
+  button:hover{
+    background: rgb(1, 99, 21);
+  }
+
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+
+    span {
+      color: rgb(221, 233, 197);
+      cursor: pointer;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}

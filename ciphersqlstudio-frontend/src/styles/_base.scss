@@ -1,0 +1,25 @@
+@use './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(
+  to bottom,
+  #faf7e5 10%,
+  #b9f7a8 40%,
+  #90f4eb 50%,
+  #3894c9 100%
+);
+  color: variables.$text;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: variables.$radius;
+}
