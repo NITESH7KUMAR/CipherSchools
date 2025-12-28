@@ -66,8 +66,24 @@ Make sure the following are installed:
 ---
 
 ## 🔹 Frontend Setup
-
 ```bash
 cd ciphersqlstudio-frontend
 npm install
 npm run dev
+
+## 🔹 Backend Setup
+### Navigate to backend directory
+```bash
+cd ciphersqlstudio-backend
+npm install
+npm run dev
+
+🗄️ Database Usage
+MongoDB Atlas
+Used for:
+Users (Login / Register)
+Assignments
+Workspace session metadata
+
+##Seed assignment data:
+node src/scripts/seedFromJson.js
